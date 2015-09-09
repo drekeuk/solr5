@@ -39,7 +39,7 @@
     <int name="zkClientTimeout">${zkClientTimeout:30000}</int>
     <int name="distribUpdateSoTimeout">${distribUpdateSoTimeout:600000}</int>
     <int name="distribUpdateConnTimeout">${distribUpdateConnTimeout:60000}</int>
-
+    
   </solrcloud>
 
   <shardHandlerFactory name="shardHandlerFactory"
@@ -48,4 +48,5 @@
     <int name="connTimeout">${connTimeout:60000}</int>
   </shardHandlerFactory>
 
+  <str name="coreRootDirectory">/opt/solr/server/solr/cores</str>
 </solr>
