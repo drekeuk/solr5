@@ -48,5 +48,5 @@
     <int name="connTimeout">${connTimeout:60000}</int>
   </shardHandlerFactory>
 
-  <str name="coreRootDirectory">/opt/solr/server/solr/cores</str>
+  <!--str name="coreRootDirectory">/opt/solr/server/solr/cores</str-->
 </solr>
