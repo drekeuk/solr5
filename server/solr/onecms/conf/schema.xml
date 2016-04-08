@@ -130,7 +130,11 @@
   <fieldType name="bbox" class="solr.BBoxField"
              geo="true" distanceUnits="kilometers" numberType="_bbox_coord" />
   <fieldType name="_bbox_coord" class="solr.TrieDoubleField" precisionStep="8" docValues="true" stored="false"/>
-  
+
+  <!-- Metadata indexing START -->
+  <copyField source="tag_*" dest="text" />
+  <!-- Metadata indexing END -->
+
   <!-- dm.desk field mappings START -->
 
   <fieldType name="atex_desk_facetString" class="solr.TextField" sortMissingLast="true" omitNorms="true">
